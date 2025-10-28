@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- link css-->
+     <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="bg-light text-center py-5">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p class="lead">I am a Full Stack Developer passionate about creating amazing web experiences.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <div class="card-group">
+  <div class="card">
+    <img src="img/portfolio.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">My Portfolio Website</h5>
+      <p class="card-text">A personal portfolio project built to showcase my skills, projects, and experience as a Full-Stack Python Developer. Developed using HTML, CSS, JavaScript, Python, and Django with a responsive and modern design.</p>
+       <a href="https://github.com/Sani-Yadav/Sani-Yadav-Portfolio" target="_blank" class="btn btn-primary mt-2">View on GitHub</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/kltech.jpg" class="card-img-top" alt="Second Projects">
+    <div class="card-body">
+      <h5 class="card-title">KLTech-ITSolutions</h5>
+      <p class="card-text">A full-stack IT solutions website developed to provide businesses with professional services including web development, software solutions, and IT support. Built using HTML, CSS, JavaScript, Python, and Django .</p>
+       <a href="https://github.com/Sani-Yadav/KLTech-ITSolutions" target="_blank" class="btn btn-primary mt-2">View on GitHub</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/tools.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Study-Shala-Tools</h5>
+      <p class="card-text">A comprehensive educational toolset designed to enhance the learning experience for students and educators. Built using HTML, CSS, JavaScript, Python, and Django with a focus on user-friendly design and functionality.</p>
+      <a href="https://github.com/Sani-Yadav/Study-Shala-Tools" target="_blank" class="btn btn-primary mt-2">View on GitHub</a>
+    </div>
+  </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form id="contactForm" class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+            <p id="formMessage" class="text-center mt-3"></p>
+        </div>
+
+        <div>
+                  <div class="map-container mt-4" style="height: 350px; width: 100%; position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); border: 1px solid rgba(0,0,0,0.1);" data-aos="fade-up">
+                  <div class="map-loading" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f8f9fa; z-index: 1; transition: all 0.3s ease;">
+                  <div class="spinner-border text-primary mb-3" role="status" style="width: 3rem; height: 3rem;">
+                      <span class="visually-hidden">Loading Map...</span>
+                    </div>
+                    <p class="text-muted mb-0">Loading location...</p>
+                  </div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14224.22674722224!2d80.94615967510754!3d26.84669307671807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2ae2c693c3f%3A0x57b7e64860d7b8f7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1715670162493!5m2!1sen!2sin"
+                    class="google-map"
+                    style="border: 0; width: 100%; height: 100%; position: absolute; top: 0; left: 0; filter: grayscale(20%) contrast(105%) saturate(110%); transition: filter 0.3s ease;"
+                    allowfullscreen="" 
+                    loading="lazy"
+                    title="Sani Yadav - Location in Lucknow, Uttar Pradesh"
+                    aria-label="Interactive map showing Sani Yadav's location in Lucknow, Uttar Pradesh"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    onload="this.parentNode.querySelector('.map-loading').style.opacity='0'; setTimeout(() => { this.parentNode.querySelector('.map-loading').style.display='none'; }, 300);">
+                  </iframe>
+                  <div class="map-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);"></div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+     <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <h3>Sani Yadav</h3>
+      <p>Full Stack Python Developer passionate about building clean, efficient, and scalable web applications.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    
+
+    <div class="footer-connect">
+      <h4>Connect</h4>
+      <a href="https://github.com/Sani-Yadav"><i class="fab fa-github"></i> GitHub</a>
+      <a href="mailto:saniyadav7755@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://linkedin.com/in/sani-yadav-986778292"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+
+  </div>
+
+  <hr>
+  <p class="footer-bottom">© 2025 Sani Yadav | All Rights Reserved</p>
+</footer>
+<!-- End of Footer Section -->
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="home.js"></script>
+</body>
+</html>
