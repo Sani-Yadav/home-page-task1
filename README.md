@@ -24,5 +24,5 @@ python -m http.server 5500
 ## License
 This project is available under the MIT License. Replace with your preferred license if needed.
 
----
+----
 _Generated and formatted for a professional GitHub push._
